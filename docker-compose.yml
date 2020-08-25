@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  ft.tomya.market.pro:
+    container_name: ft.tomya.market.pro
+    build:
+      context: .
+    environment:
+      ISSUER: https://sso.tomyatest.com
+    ports:
+      - '8080:80'
